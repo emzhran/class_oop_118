@@ -5,6 +5,14 @@ class Mahasiswa {
 public:
 	string nim;
 	string nama;
+
+public: void input() {
+	cout << "\nMasukkan Nama Mahasiswa : ";
+	cin >> nama;
+	cout << "\nMasukkan NIM : ";
+	cin >> nim;
+}
+
 public: void cetak() {
 	cout << "NIM : " << nim;
 	cout << "\nNama : " << nama;
@@ -36,10 +44,7 @@ int main() {
 	Mahasiswa mhs1;
 	Matakuliah mk;
 
-	cout << "Masukkan NIM : ";
-	cin >> mhs1.nim;
-	cout << "Masukkan Nama : ";
-	cin >> mhs1.nama;
+	mhs1.input();
 	mhs1.cetak();
 
 	mk.input();
