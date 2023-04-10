@@ -41,4 +41,7 @@ int main() {
 	cout << "Masukkan Nama : ";
 	cin >> mhs1.nama;
 	mhs1.cetak();
+
+	mk.input();
+	mk.tampil();
 }
