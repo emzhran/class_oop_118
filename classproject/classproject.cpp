@@ -11,7 +11,7 @@ public: void cetak() {
 	}
 };
 
-class Matakuliah{
+class Matakuliah {
 private:
 	string kode;
 	string namaM;
@@ -25,4 +25,9 @@ public:
 		cout << "Jumlah SKS : ";
 		cin >> sks;
 	}
-}
+	void tampil() {
+		cout << "Kode Matakuliah : " << kode;
+		cout << "Nama Matakuliah : " << namaM;
+		cout << "SKS : " << sks;
+	}
+};
